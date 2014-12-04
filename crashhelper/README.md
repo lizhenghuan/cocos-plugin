@@ -151,7 +151,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../cocos2d/external
 ```C++
 //在捕获到自定义错误时（比如自己捕获的异常或者其他错误），调用下面的C++静态方法
 //traceback中传递详细信息，如果需要多行可以用\n隔开
-void TestinCrashHelper::reportException(int type, const char* reason, const char* traceback);
+void TestinCrashHelper::reportException(int type, const char* message, const char* traceback);
 
 //例如
 TestinCrashHelper::reportException(1, "test reason", "test message");
